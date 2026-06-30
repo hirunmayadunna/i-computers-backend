@@ -1,13 +1,18 @@
 
 import './App.css'
+import TrendingProducts from './components/trendingProducts'
 
 function App() {
 
   return (
     <>
-      <dev>
-        Hirun Mayadunna
-      </dev>
+      <div>
+        
+        <TrendingProducts />
+
+        <img src="https://picsum.photos/id/1/200/300" alt="Sample Image" />
+
+      </div>
     </>
   )
 }
