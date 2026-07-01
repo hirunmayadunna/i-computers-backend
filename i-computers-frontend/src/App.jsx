@@ -1,19 +1,22 @@
-
+import { Routes,Route } from 'react-router-dom'
 import './App.css'
+import HomePage from './pages/homePage'
+import AdminPage from './pages/adminPage'
 import TrendingProducts from './components/trendingProducts'
 
 function App() {
 
   return (
-    <>
-      <div>
-        
-        <TrendingProducts />
 
-        <img src="https://picsum.photos/id/1/200/300" alt="Sample Image" />
+    <div className="w-full h-screen border-[6px] flex justify-center items-center ">
 
-      </div>
-    </>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/admin' element={<AdminPage />} />
+      </Routes>
+
+    </div>
+
   )
 }
 
