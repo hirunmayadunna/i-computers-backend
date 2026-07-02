@@ -2,17 +2,19 @@ import { Routes,Route } from 'react-router-dom'
 import './App.css'
 import HomePage from './pages/homePage'
 import AdminPage from './pages/adminPage'
-import TrendingProducts from './components/trendingProducts'
+import TestPage from './pages/test'
+
 
 function App() {
 
   return (
 
-    <div className="w-full h-screen border-[6px] flex justify-center items-center ">
+    <div className="w-full h-screen flex justify-center items-center bg-primary text-secondary">
 
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/admin' element={<AdminPage />} />
+        <Route path='/admin/*' element={<AdminPage />} />
+        <Route path='/test' element={<TestPage />} />
       </Routes>
 
     </div>
